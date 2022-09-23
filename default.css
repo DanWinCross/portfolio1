@@ -10,6 +10,9 @@
     --secondaryText:#4b5156;   
     
     --themeDotBorder: #24294e;
+
+    --previewBG: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
 }
 
 /* General styling */
@@ -60,7 +63,7 @@ h6 {font-size: 16px;}
 }
 
 .main-container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -139,11 +142,13 @@ h6 {font-size: 16px;}
     background-color: #2aca3e;
 }
 
-/* Section two styling */
+/* SECTION 2 STYLING */
 
-
+/* Profile picture and theme changer column */
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #profile-pic{
@@ -175,12 +180,103 @@ h6 {font-size: 16px;}
     cursor: pointer;
 }
 
-.right-column{
-    grid-area: right-column;
+.theme-dot:hover{
+    border-width: 5px;
 }
 
-@media screen and (max-width: 1200px) {
-    .main-container{
-        width: 95%;
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode{
+    background-color: #192734;
+}
+
+#green-mode{
+    background-color: #78866b;
+}
+
+#purple-mode{
+    background-color: #7e4c74;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* What I do column */
+
+.right-column{
+    grid-area: right-column;
+    display: grid;
+    align-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#preview{
+   background-color: var(--previewShadow);
+   width: 300px;
+   height: 180px; 
+   padding-left: 30px;
+   padding-top: 30px;
+}
+
+#preview-shadow{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBG);
+    padding: 15px;
+    position: relative;
+}
+
+.corner{
+   width: 7px;
+   height: 7px; 
+   border-radius: 50%;
+   border: 1.5px solid #17a2b8;
+   background-color: #fff;
+   position: absolute;
+}
+
+#corner-tl{
+    top: -5px;
+    right: -5px;
+}
+
+#corner-tr{
+    top: -5px;
+    left: -5px;
+}
+
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+}
+
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column{
+        justify-content: center;
     }
 }
