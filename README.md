@@ -64,4 +64,12 @@ This is a demo portfolio which I am currently working on and perfecting. I used 
 
 ---
 
+### What I Learned
+
+I learned the process to strategising CSS flexbox and Grids to maximise control of your layout and responsiveness. I learned some new CSS skills using absolute and relativ positioning. I also learned how to adjust a theme using JavaScript. 
+
+### Acknowledgements
+
+Cridit must go to [Denis Ivy & Traversy Media](https://www.youtube.com/watch?v=r_hYR53r61M&list=PLiZVeIaCmKCkFdiu2N53U0CdmSTEJkkwA&index=18&t=5624s). This video helped me recall a lot of the basic information needed for me to build my own projects. 
+
 
