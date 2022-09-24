@@ -36,10 +36,17 @@ This is a demo portfolio which I am currently working on and perfecting. I used 
 
 ### Screenshots 
 
-- ![White Theme or origional page](images/ReadMe-media/WhiteTheme.png)
-- ![Purple Mobile Responsive Theme](images/ReadMe-media/PurpleMobileTheme.png)
-- ![Green Theme](images/ReadMe-media/GreenTheme.png)
-- ![Blue Theme](images/ReadMe-media/BlueTheme.png)
+**White Theme or origional page**
+![White Theme or origional page](images/ReadMe-media/WhiteTheme.png)
+
+**Purple Mobile Responsive Theme**
+![Purple Mobile Responsive Theme](images/ReadMe-media/PurpleMobileTheme.png)
+
+**Green Theme**
+![Green Theme](images/ReadMe-media/GreenTheme.png)
+
+**Blue Theme**
+![Blue Theme](images/ReadMe-media/BlueTheme.png)
 
 ---
 
