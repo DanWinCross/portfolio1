@@ -3,8 +3,13 @@
 // EVENT HANDLERS
 
 let themeDots = document.getElementsByClassName('theme-dot')
+let theme = localStorage.getItem('theme')
 
-
+if(theme == null){
+	setTheme('light')
+}else{
+	setTheme(theme)
+}
 
 // LOOP THROUGH THEME DOTS
 for(var i=0; themeDots.length > 0; i++){
@@ -34,4 +39,6 @@ function setTheme(mode){
     if(mode === 'purple'){
         document.getElementById('theme-style').href = 'purple.css'
     }
+
+    localStorage.setItem('theme', mode)
 }
